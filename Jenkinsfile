@@ -11,8 +11,8 @@ pipeline {
         }
         stage('Deploy with Docker') {
             steps {
-                bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" build -t ecommerce-app .'
-                bat '"C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe" run -d -p 8080:3000 --name my-ecommerce-container ecommerce-app'
+                bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t ecommerce-app .'
+                bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" run -d -p 8080:3000 --name my-ecommerce-container ecommerce-app'
             }
         }
     }
