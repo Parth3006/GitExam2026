@@ -13,7 +13,7 @@ pipeline {
             steps {
                 bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t ecommerce-app .'
                 bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" rm -f my-ecommerce-container || exit /b 0'
-                bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" run -d -p 8080:3000 --name my-ecommerce-container ecommerce-app'
+                bat '"C:\\Users\\USER\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" run -d -p 9090:3000 --name my-ecommerce-container ecommerce-app'
             }
         }
     }
