@@ -11,8 +11,8 @@ pipeline {
         }
         stage('Deploy with Docker') {
             steps {
-                sh 'docker build -t ecommerce-app .'
-                sh 'docker run -d -p 8080:3000 --name my-ecommerce-container ecommerce-app'
+                bat 'docker build -t ecommerce-app .'
+                bat 'docker run -d -p 8080:3000 --name my-ecommerce-container ecommerce-app'
             }
         }
     }
